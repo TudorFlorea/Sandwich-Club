@@ -76,6 +76,12 @@ public class DetailActivity extends AppCompatActivity {
         Toast.makeText(this, R.string.detail_error_message, Toast.LENGTH_SHORT).show();
     }
 
+    /**
+     *@param sandwich -a Sandwich object
+     *Checks if any of the properties of the Sandwich are null or empty and if so it hides the textviews responsable
+     *for displaying that data otherwise it populates the textviews with the data from the Sandwich object
+     */
+
     private void populateUI(Sandwich sandwich) {
 
         if (sandwich.getPlaceOfOrigin() == null || sandwich.getPlaceOfOrigin().equals("")) {
@@ -109,11 +115,18 @@ public class DetailActivity extends AppCompatActivity {
 
     }
 
+    /**
+     *@param ingredients - a list of sandwich ingredients
+     *Method that takes a list of ingredients as parameter and returns a string representation of a bullet point list
+     *with each ingredient on a row
+     *@return string representation of a bullet point list to be used as text in a TextView
+     */
+
     private String setupIngredientsText(List<String> ingredients) {
         StringBuilder sb = new StringBuilder();
         if (ingredients != null) {
             for (int i = 0; i < ingredients.size(); i++ ) {
-                sb.append("\u25CF");
+                sb.append("\u25CF ");
                 sb.append(ingredients.get(i));
                 sb.append("\n");
             }
@@ -123,11 +136,18 @@ public class DetailActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     *@param names - a list of alternative names for a sandwich
+     *Method that takes a list of names as parameter and returns a string with all the concatenated names separated by coma
+     *@return string of concatenated names to be used as text in a TextView
+     */
+
     private String setupAlsoKnownAsText(List<String> names) {
         StringBuilder sb = new StringBuilder();
         if (names != null) {
             for (int i = 0; i < names.size(); i++ ) {
                 sb.append(names.get(i));
+                sb.append(", ");
             }
             return sb.toString();
         } else {

@@ -11,6 +11,12 @@ import java.util.List;
 
 public class JsonUtils {
 
+    /**
+     *@param json - a raw JSON string
+     *Utility method that turns a string into a JSONObject or returns null if a JSONException is thrown
+     *@return JSONObject
+     */
+
     public static Sandwich parseSandwichJson(String json) {
         JSONObject sandwichJson;
         JSONObject name;
@@ -49,6 +55,12 @@ public class JsonUtils {
 
         return new Sandwich(mainName, alsoKnownAs, placeOfOrigin, description, image, ingredients);
     }
+
+    /**
+     *@param jsonArray -a Sandwich object
+     *Utility method that turns a JSONArray object into an ArrayList
+     *@return ArrayList with the data from the JSONArray
+     */
 
     private static List<String> jsonArrayToList (JSONArray jsonArray) throws JSONException {
         ArrayList<String> arrayList = new ArrayList<String>();

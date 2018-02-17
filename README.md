@@ -4,8 +4,8 @@
 The app provides information about different types of sandwiches. The main activity has a list with all the available sandwiches and when you click a specific sandwich a detailed view is shown with all the information about that specific sandwich
 
 ## Screenshots
-![screenshot_1](https://user-images.githubusercontent.com/17934944/36346358-b3653cd0-1445-11e8-8b80-c7e41a8cf107.png)
-![screenshot_2](https://user-images.githubusercontent.com/17934944/36346366-d1be6274-1445-11e8-93ad-ebe503a6b641.png)
+<img src="https://user-images.githubusercontent.com/17934944/36346358-b3653cd0-1445-11e8-8b80-c7e41a8cf107.png" width="300">
+<img src="https://user-images.githubusercontent.com/17934944/36346366-d1be6274-1445-11e8-93ad-ebe503a6b641.png" width="300">
 
 ## Common Project Requirements
 - [x] App is written solely in the Java Programming Language

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="right_margin_small">8dp</dimen>
+    <dimen name="right_margin_large">16dp</dimen>
+    <dimen name="left_margin_small">8dp</dimen>
+    <dimen name="top_margin_small">8dp</dimen>
+    <dimen name="bottom_margin_small">8dp</dimen>
+    <dimen name="large_text_size">24sp</dimen>
+    <dimen name="small_text_size">20sp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>
